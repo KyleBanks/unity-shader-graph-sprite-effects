@@ -132,7 +132,6 @@ GameObject:
   - component: {fileID: 623904915}
   - component: {fileID: 623904913}
   - component: {fileID: 623904914}
-  - component: {fileID: 623904916}
   m_Layer: 0
   m_Name: Robot
   m_TagString: Untagged
@@ -177,7 +176,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f6a19f2a2c9404fbe90d0ad0d0101292, type: 2}
+  - {fileID: 2100000, guid: 7f21815db3ccd43eca25cb4e91a0f076, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -224,20 +223,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &623904916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 623904912}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 69e76f24a13e94411ab2bf70790cdd44, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MaxIntensityDuration: 2
-  IntensityDecayDuration: 1
 --- !u!1 &1180328655
 GameObject:
   m_ObjectHideFlags: 0

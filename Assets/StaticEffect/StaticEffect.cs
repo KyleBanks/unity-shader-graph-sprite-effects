@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class StaticEffect : MonoBehaviour
 {
@@ -8,7 +6,7 @@ public class StaticEffect : MonoBehaviour
     private static string MATERIAL_INTENSITY_PARAM = "_Intensity";
 
     public float MaxIntensityDuration = 2f;
-    public float IntensityDecayDuration = 1f;
+    public float IntensityDecayDuration = 0.5f;
 
     private Material _material;
 
@@ -46,7 +44,7 @@ public class StaticEffect : MonoBehaviour
         // Calculate the intensity based on the phase of the animation
         float intensity; 
 
-        // Max intensity phase
+        // Max Static Intensity phase
         if (this._maxIntensityElapsed < MaxIntensityDuration)
         {
             this._maxIntensityElapsed += Time.deltaTime;
@@ -58,7 +56,7 @@ public class StaticEffect : MonoBehaviour
             this._intensityDecayElapsed += Time.deltaTime;
             intensity = Mathf.Lerp(1f, 0f, this._intensityDecayElapsed / IntensityDecayDuration);
         }
-        // Effect Complete
+        // Normal Rendering, or Off phase
         else
         {
             intensity = 0f;
